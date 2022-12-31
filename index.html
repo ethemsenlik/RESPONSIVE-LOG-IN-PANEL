@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_3s913D.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_Joz0FE.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_OFBfKg.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_lxlh9ct5.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <a href="#">Lost Your Password ?</a>
+                <div class="login">
+                    <button type="submit" class="submit-btn">Log In</button>
+                </div>
+            </form>
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Enter Email" required>
+                <a href="#">By registering, you agree to the Terms, Data Policy and Cookies Policy.</a>
+                <div class="login">
+                    <button type="submit" class="submit-btn">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let x = document.getElementById("Login");
+        let z = document.getElementById("Register");
+        let y = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-450px"
+            z.style.left = "10px"
+            y.style.left = "100px"
+        }
+
+        function login() {
+            x.style.left = "10px"
+            z.style.left = "450px"
+            y.style.left = "0px"
+        }
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
